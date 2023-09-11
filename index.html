@@ -8,11 +8,35 @@
 <body>
         <header>
         <img src=".\images/logo.png" alt="Capelo e Diplomaa">
+        <h1>Calculadora de médias</h1>
     </header>
     <Form>
         <input type="text" required placeholder="Nome da Atividade"/>
-        <input type="number" required placeholder="Nota da Atividade"/>
+        <input type="number" required placeholder="Nota da Atividade" min="0" max="10"/>
         <button type="submit">Adicionar +</button>
     </Form>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome da Atividade</th>
+                <th>Nota da Atividade</th>
+                <th>APROVADO?!</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Atividade 1</td>
+                <td>7</td>
+                <td><img src="./images/aprovado.png" alt="Emoji comemorando"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Média final</td>
+                <td>7</td>
+                <td>APROVADO!</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
