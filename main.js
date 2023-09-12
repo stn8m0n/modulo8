@@ -6,6 +6,14 @@ let linhas = '';
 
 form.addEventListener('submit' , function(e){
     e.preventDefault();
+
+    adicionaLinha();
+    atualizaTabela();
+
+});
+
+function adicionaLinha () {
+
     const inputNomeAtividade = document.getElementById ('nome-atividade');
     const inputNotaAtividade = document.getElementById ('nota-atividade');
 
@@ -17,9 +25,14 @@ form.addEventListener('submit' , function(e){
 
     linhas += linha;
 
-    const corpoTabela = document.querySelector ('tbody');
-    corpoTabela.innerHTML = linhas;
+
 
     inputNomeAtividade.value = '';
     inputNotaAtividade.value = '';
-});
+
+}
+
+function atualizaTabela (){
+    const corpoTabela = document.querySelector ('tbody');
+    corpoTabela.innerHTML = linhas;
+}
