@@ -26,7 +26,7 @@ function adicionaLinha () {
 
     if(atividades.includes(inputNomeAtividade.value)){
         alert(`A atividade: ${inputNome7Atividade.value} já foi inserida anteriormente`);
-    }else{
+    } else {
 
         atividades.push(inputNomeAtividade.value);
     notas.push(parseFloat(inputNotaAtividade.value));
