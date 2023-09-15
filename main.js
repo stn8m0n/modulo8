@@ -24,7 +24,11 @@ function adicionaLinha () {
     const inputNomeAtividade = document.getElementById ('nome-atividade');
     const inputNotaAtividade = document.getElementById ('nota-atividade');
 
-    atividades.push(inputNomeAtividade.value);
+    if(atividades.includes(inputNomeAtividade.value)){
+        alert(`A atividade: ${inputNome7Atividade.value} já foi inserida anteriormente`);
+    }else{
+
+        atividades.push(inputNomeAtividade.value);
     notas.push(parseFloat(inputNotaAtividade.value));
 
     let linha = '<tr>';
@@ -35,7 +39,7 @@ function adicionaLinha () {
 
     linhas += linha;
 
-
+    }
 
     inputNomeAtividade.value = '';
     inputNotaAtividade.value = '';
