@@ -3,7 +3,9 @@ const imgAprovado = '<img src="./images/aprovado.png" alt="Celebrando" />';
 const imgReprovado = '<img src="./images/reprovado.png" alt="decepcionado" />';
 const atividades = [];
 const notas = [];
-/*const spanAprovado =´<span class="resultado aprovado"´></span>*/
+const spanAprovado ='<span class="resultado aprovado">Aprovado</span>';
+const spanReprovado ='<span class="resultado reprovado">Reprovado</span>';
+
 
 let linhas = '';
 
@@ -48,7 +50,7 @@ function atualizaMediaFinal(){
     const mediaFinal = calculaMediaFinal();
     
     document.getElementById('media-final-valor').innerHTML = mediaFinal;
-    document.getElementById('media-final-resultado').innerHTML = mediaFinal >= 7 ? 'Aprovado' : 'Reprovado';
+    document.getElementById('media-final-resultado').innerHTML = mediaFinal >= 7 ? spanAprovado : spanReprovado;
 }
 
 function calculaMediaFinal(){
