@@ -25,7 +25,7 @@ function adicionaLinha () {
     const inputNotaAtividade = document.getElementById ('nota-atividade');
 
     if(atividades.includes(inputNomeAtividade.value)){
-        alert(`A atividade: ${inputNome7Atividade.value} já foi inserida anteriormente`);
+        alert(`A atividade: ${inputNomeAtividade.value} já foi inserida anteriormente`);
     } else {
 
         atividades.push(inputNomeAtividade.value);
